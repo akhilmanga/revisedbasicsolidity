@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "makeSupeRare",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rarity",
+				"outputs": [
+					{
+						"internalType": "enum MyEnums.Rarity",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MyEnums.sol": "MyEnums"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MyEnums.sol": {
+			"keccak256": "0x42e29f832967ec098d58a92653081a24fff49be10fb7662f33d25270f2558b80",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://48dc50c287995b52178a55b6365551ca799700354e2fe58f6e9074ae78c83f31",
+				"dweb:/ipfs/QmSzesiT6uiDykJ3MnoykG2TRvAhyvSQmcm5DhnbKf8x9n"
+			]
+		}
+	},
+	"version": 1
+}

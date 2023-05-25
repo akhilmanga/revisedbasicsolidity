@@ -1,0 +1,500 @@
+{
+	"id": "b3bf745bccd545e0901dc4a8feeaced9",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.18",
+	"solcLongVersion": "0.8.18+commit.87f61d96",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"MyInterface.sol": {
+				"content": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\ninterface ICounter {\n    function count() external view returns(uint256);\n    function addToCount() external;\n}\n\ncontract MyInterface {\n\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"MyInterface.sol": {
+				"ICounter": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "addToCount",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [],
+							"name": "count",
+							"outputs": [
+								{
+									"internalType": "uint256",
+									"name": "",
+									"type": "uint256"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"addToCount()": "3fa107b5",
+							"count()": "06661abd"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"addToCount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"count\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"MyInterface.sol\":\"ICounter\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"MyInterface.sol\":{\"keccak256\":\"0xdfe9f7f142b2c130fa4306b7e53f16f987dffd9e04474afa6eb885ffa530ad9d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c17ce11d7805fb5defa5c2420d8056d9dcd181a064b8e41b540be74f0b0eaf5\",\"dweb:/ipfs/Qmc7xWvy3iixhge6a5NjpYeQKvtVYQb1fmNwA8jc8ggsZ5\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				},
+				"MyInterface": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"MyInterface.sol\":171:196  contract MyInterface {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"MyInterface.sol\":171:196  contract MyInterface {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212202982e0636bc07f651a5fad3c3d8b381a1fbcf522d6238d94753d42a7d108dfdd64736f6c63430008120033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212202982e0636bc07f651a5fad3c3d8b381a1fbcf522d6238d94753d42a7d108dfdd64736f6c63430008120033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x29 DUP3 0xE0 PUSH4 0x6BC07F65 BYTE 0x5F 0xAD EXTCODECOPY RETURNDATASIZE DUP12 CODESIZE BYTE 0x1F 0xBC CREATE2 0x22 0xD6 0x23 DUP14 SWAP5 PUSH22 0x3D42A7D108DFDD64736F6C6343000812003300000000 ",
+							"sourceMap": "171:25:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212202982e0636bc07f651a5fad3c3d8b381a1fbcf522d6238d94753d42a7d108dfdd64736f6c63430008120033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x29 DUP3 0xE0 PUSH4 0x6BC07F65 BYTE 0x5F 0xAD EXTCODECOPY RETURNDATASIZE DUP12 CODESIZE BYTE 0x1F 0xBC CREATE2 0x22 0xD6 0x23 DUP14 SWAP5 PUSH22 0x3D42A7D108DFDD64736F6C6343000812003300000000 ",
+							"sourceMap": "171:25:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 171,
+									"end": 196,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212202982e0636bc07f651a5fad3c3d8b381a1fbcf522d6238d94753d42a7d108dfdd64736f6c63430008120033",
+									".code": [
+										{
+											"begin": 171,
+											"end": 196,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 171,
+											"end": 196,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 171,
+											"end": 196,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 171,
+											"end": 196,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 171,
+											"end": 196,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 171,
+											"end": 196,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"MyInterface.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"MyInterface.sol\":\"MyInterface\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"MyInterface.sol\":{\"keccak256\":\"0xdfe9f7f142b2c130fa4306b7e53f16f987dffd9e04474afa6eb885ffa530ad9d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c17ce11d7805fb5defa5c2420d8056d9dcd181a064b8e41b540be74f0b0eaf5\",\"dweb:/ipfs/Qmc7xWvy3iixhge6a5NjpYeQKvtVYQb1fmNwA8jc8ggsZ5\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"MyInterface.sol": {
+				"ast": {
+					"absolutePath": "MyInterface.sol",
+					"exportedSymbols": {
+						"ICounter": [
+							10
+						],
+						"MyInterface": [
+							11
+						]
+					},
+					"id": 12,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "ICounter",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "ICounter",
+							"nameLocation": "68:8:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "06661abd",
+									"id": 6,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "count",
+									"nameLocation": "92:5:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "97:2:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 4,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 6,
+												"src": "122:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 3,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "122:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "121:9:0"
+									},
+									"scope": 10,
+									"src": "83:48:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "3fa107b5",
+									"id": 9,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "addToCount",
+									"nameLocation": "145:10:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 7,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "155:2:0"
+									},
+									"returnParameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "166:0:0"
+									},
+									"scope": 10,
+									"src": "136:31:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 12,
+							"src": "58:111:0",
+							"usedErrors": []
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "MyInterface",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 11,
+							"linearizedBaseContracts": [
+								11
+							],
+							"name": "MyInterface",
+							"nameLocation": "180:11:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 12,
+							"src": "171:25:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:163:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

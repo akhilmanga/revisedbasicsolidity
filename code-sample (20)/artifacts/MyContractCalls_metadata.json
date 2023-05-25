@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contractAddress",
+						"type": "address"
+					}
+				],
+				"name": "getAgeFromOtherContract",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MyContractCalls.sol": "MyContractCalls"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MyContractCalls.sol": {
+			"keccak256": "0x37e7549d947a50bf61447f13f503927f8f164003391babeef14485dd1a17583a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dafe034812b47eb45ed3c879e2eac5f357adf8066c62f83271ee2ed7e1b08e9d",
+				"dweb:/ipfs/QmUNVo9pz6PcoCSGu51mNyNKiL3Jf4yX6b7cmuuEhyLwSR"
+			]
+		}
+	},
+	"version": 1
+}

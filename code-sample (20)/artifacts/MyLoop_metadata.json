@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "myLoop",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MyLoop.sol": "MyLoop"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MyLoop.sol": {
+			"keccak256": "0xa0bd1f67c3b930d37a705b5973276c9bd5d9c9846fcd7ac6910632e39ea3a71d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f7b558d85f1e2694659231c53b7a28a48bc526e4b0ca68794ae3bcabcf11a54a",
+				"dweb:/ipfs/Qmdy5rZfBYHQeU7p9UaU8fxVWFU5qjCHKrZQuYrgxHV4EL"
+			]
+		}
+	},
+	"version": 1
+}
